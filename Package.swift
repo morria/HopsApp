@@ -16,7 +16,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.19.0"),
+        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.19.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -29,9 +29,9 @@ let package = Package(
             name: "Protobufs",
             dependencies: [
                 .product(name: "SwiftProtobuf", package: "swift-protobuf")
-            ]
+            ],
         ),
-        .target(
+        .executableTarget(
             name: "HopsCLI",
             dependencies: ["Hops"]
         ),
