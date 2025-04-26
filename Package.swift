@@ -29,7 +29,7 @@ let package = Package(
             name: "Protobufs",
             dependencies: [
                 .product(name: "SwiftProtobuf", package: "swift-protobuf")
-            ],
+            ]
         ),
         .executableTarget(
             name: "HopsCLI",
