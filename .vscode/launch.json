@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Hops}",
+            "name": "Debug hops",
+            "program": "${workspaceFolder:Hops}/.build/debug/hops",
+            "preLaunchTask": "swift: Build Debug hops"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Hops}",
+            "name": "Release hops",
+            "program": "${workspaceFolder:Hops}/.build/release/hops",
+            "preLaunchTask": "swift: Build Release hops"
+        }
+    ]
+}
