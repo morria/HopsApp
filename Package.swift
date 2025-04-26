@@ -33,7 +33,7 @@ let package = Package(
         ),
         .target(
             name: "HopsCLI",
-            dependencies: []
+            dependencies: ["Hops"]
         ),
         .testTarget(
             name: "HopsTests",
