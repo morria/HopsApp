@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 /usr/bin/env protoc \
-    --swift_out=./Sources/Protobufs/Generated \
+    --swift_out=./Sources/MeshtasticProtobufs/Generated \
     -I./protobufs \
     ./protobufs/*.proto \
     ./protobufs/**/*.proto

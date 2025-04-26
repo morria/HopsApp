@@ -16,19 +16,22 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.19.0")
+        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.19.0"),
+        .package(url: "https://github.com/emqx/CocoaMQTT.git", from: "2.0.0"),
+
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Hops",
-            dependencies: ["Protobufs"]
+            dependencies: ["MeshtasticProtobufs"]
         ),
         .target(
-            name: "Protobufs",
+            name: "MeshtasticProtobufs",
             dependencies: [
-                .product(name: "SwiftProtobuf", package: "swift-protobuf")
+                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+                .product(name: "CocoaMQTT", package: "CocoaMQTT"),
             ]
         ),
         .executableTarget(
